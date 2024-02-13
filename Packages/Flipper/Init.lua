@@ -1,12 +1,12 @@
 local Flipper = {
-	SingleMotor = require(script.SingleMotor),
-	GroupMotor = require(script.GroupMotor),
+	SingleMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/BaseMotor.lua")),
+	GroupMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/GroupMotor.lua")),
 
-	Instant = require(script.Instant),
-	Linear = require(script.Linear),
-	Spring = require(script.Spring),
+	Instant = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Instant.lua")),
+	Linear = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Linear.lua")),
+	Spring = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Spring.lua")),
 
-	isMotor = require(script.isMotor),
+	isMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/isMotor.lua")),
 }
 
 return Flipper
