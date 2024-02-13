@@ -1,8 +1,8 @@
 return function()
-	local GroupMotor = require(script.Parent.GroupMotor)
+	local GroupMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/GroupMotor.lua"))
 
-	local Instant = require(script.Parent.Instant)
-	local Spring = require(script.Parent.Spring)
+	local Instant = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Instant.lua"))
+	local Spring = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Spring.lua"))
 
 	it("should complete when all child motors are complete", function()
 		local motor = GroupMotor.new({
