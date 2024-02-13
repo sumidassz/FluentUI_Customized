@@ -1,6 +1,6 @@
 return function()
-	local SingleMotor = require(script.Parent.SingleMotor)
-	local Instant = require(script.Parent.Instant)
+	local SingleMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/SingleMotor.lua"))
+	local Instant = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Instant.lua"))
 
 	it("should assign new state on step", function()
 		local motor = SingleMotor.new(0, false)
