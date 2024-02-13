@@ -6,12 +6,12 @@ local TweenService = game:GetService("TweenService")
 local Camera = game:GetService("Workspace").CurrentCamera
 local Mouse = LocalPlayer:GetMouse()
 
-local Root = script
-local Creator = require(Root.Creator)
-local ElementsTable = require(Root.Elements)
-local Acrylic = require(Root.Acrylic)
-local Components = Root.Components
-local NotificationModule = require(Components.Notification)
+local Root = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/main.lua"))
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Creator.lua"))
+local ElementsTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Elements/Init.lua"))
+local Acrylic = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Acrylic/Init.lua"))
+local Components = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Components/Init.lua"))
+local NotificationModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Components/Notification.lua"))
 
 local New = Creator.New
 
@@ -27,7 +27,7 @@ local Library = {
 
 	OpenFrames = {},
 	Options = {},
-	Themes = require(Root.Themes).Names,
+	Themes = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Themes/Init.lua")).Names,
 
 	Window = nil,
 	WindowFrame = nil,
