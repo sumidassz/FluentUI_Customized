@@ -1,8 +1,8 @@
 return function()
-	local isMotor = require(script.Parent.isMotor)
+	local isMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/isMotor.lua"))
 
-	local SingleMotor = require(script.Parent.SingleMotor)
-	local GroupMotor = require(script.Parent.GroupMotor)
+	local SingleMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/SingleMotor.lua"))
+	local GroupMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/GroupMotor.lua"))
 
 	local singleMotor = SingleMotor.new(0)
 	local groupMotor = GroupMotor.new({})
