@@ -1,7 +1,7 @@
 return function()
 	local RunService = game:GetService("RunService")
 
-	local BaseMotor = require(script.Parent.BaseMotor)
+	local BaseMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/BaseMotor.lua"))
 
 	describe("connection management", function()
 		local motor = BaseMotor.new()
