@@ -1,5 +1,5 @@
 return function()
-	local Signal = require(script.Parent.Signal)
+	local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Signal.lua"))
 
 	it("should invoke all connections, instantly", function()
 		local signal = Signal.new()
