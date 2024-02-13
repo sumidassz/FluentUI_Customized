@@ -1,7 +1,7 @@
-local BaseMotor = require(script.Parent.BaseMotor)
-local SingleMotor = require(script.Parent.SingleMotor)
+local BaseMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/BaseMotor.lua"))
+local SingleMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/SingleMotor.lua"))
 
-local isMotor = require(script.Parent.isMotor)
+local isMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/isMotor.lua"))
 
 local GroupMotor = setmetatable({}, BaseMotor)
 GroupMotor.__index = GroupMotor
