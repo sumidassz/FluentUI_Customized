@@ -1,14 +1,13 @@
--- i will rewrite this someday
 local UserInputService = game:GetService("UserInputService")
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local Camera = game:GetService("Workspace").CurrentCamera
 
-local Root = script.Parent.Parent
-local Flipper = require(Root.Packages.Flipper)
-local Creator = require(Root.Creator)
-local Acrylic = require(Root.Acrylic)
+local Root = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/main.lua"))
+local Flipper = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Init.lua"))
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Creator.lua"))
+local Acrylic = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Acrylic/Init.lua"))
 local Assets = require(script.Parent.Assets)
-local Components = script.Parent
+local Components = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Components/Init.lua"))
 
 local Spring = Flipper.Spring.new
 local Instant = Flipper.Instant.new
