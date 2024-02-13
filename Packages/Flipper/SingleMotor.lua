@@ -1,4 +1,4 @@
-local BaseMotor = require(script.Parent.BaseMotor)
+local BaseMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/BaseMotor.lua"))
 
 local SingleMotor = setmetatable({}, BaseMotor)
 SingleMotor.__index = SingleMotor
