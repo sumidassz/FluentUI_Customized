@@ -1,3 +1,4 @@
+local Root = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/main.lua"))
 local Themes = {["Dark"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Themes/Dark.lua")), ["Darker"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Themes/Darker.lua"))}
 local Flipper = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Init.lua"))
 
