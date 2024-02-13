@@ -6,7 +6,6 @@ local Root = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidass
 local Flipper = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Init.lua"))
 local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Creator.lua"))
 local Acrylic = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Acrylic/Init.lua"))
-local Assets = require(script.Parent.Assets)
 local Components = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Components/Init.lua"))
 
 local Spring = Flipper.Spring.new
@@ -175,29 +174,6 @@ return function(Config)
 
 	local OldSizeX
 	local OldSizeY
-	Window.Maximize = function(Value, NoPos, Instant)
-		Window.Maximized = Value
-		Window.TitleBar.MaxButton.Frame.Icon.Image = Value and Assets.Restore or Assets.Max
-
-		if Value then
-			OldSizeX = Window.Size.X.Offset
-			OldSizeY = Window.Size.Y.Offset
-		end
-		local SizeX = Value and Camera.ViewportSize.X or OldSizeX
-		local SizeY = Value and Camera.ViewportSize.Y or OldSizeY
-		SizeMotor:setGoal({
-			X = Flipper[Instant and "Instant" or "Spring"].new(SizeX, { frequency = 6 }),
-			Y = Flipper[Instant and "Instant" or "Spring"].new(SizeY, { frequency = 6 }),
-		})
-		Window.Size = UDim2.fromOffset(SizeX, SizeY)
-
-		if not NoPos then
-			PosMotor:setGoal({
-				X = Spring(Value and 0 or Window.Position.X.Offset, { frequency = 6 }),
-				Y = Spring(Value and 0 or Window.Position.Y.Offset, { frequency = 6 }),
-			})
-		end
-	end
 
 	Creator.AddSignal(Window.TitleBar.Frame.InputBegan, function(Input)
 		if
