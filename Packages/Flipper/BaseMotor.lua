@@ -1,6 +1,6 @@
 local RunService = game:GetService("RunService")
 
-local Signal = require(script.Parent.Signal)
+local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Signal.lua"))
 
 local noop = function() end
 
