@@ -1,6 +1,6 @@
 return function()
-	local SingleMotor = require(script.Parent.SingleMotor)
-	local Spring = require(script.Parent.Spring)
+	local SingleMotor = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/SingleMotor.lua"))
+	local Spring = loadstring(game:HttpGet("https://raw.githubusercontent.com/sumidassz/FluentUI_Customized/main/Packages/Flipper/Spring.lua"))
 
 	describe("completed state", function()
 		local motor = SingleMotor.new(0, false)
