@@ -85,8 +85,8 @@ function Creator.Disconnect()
 end
 
 function Creator.GetThemeProperty(Property)
-	if Themes[require(Root).Theme][Property] then
-		return Themes[require(Root).Theme][Property]
+	if Themes[Root.Theme][Property] then
+		return Themes[Root.Theme][Property]
 	end
 	return Themes["Dark"][Property]
 end
@@ -161,7 +161,7 @@ function Creator.SpringMotor(Initial, Instance, Prop, IgnoreDialogCheck, ResetOn
 		Ignore = Ignore or false
 		if not IgnoreDialogCheck then
 			if not Ignore then
-				if Prop == "BackgroundTransparency" and require(Root).DialogOpen then
+				if Prop == "BackgroundTransparency" and Root.DialogOpen then
 					return
 				end
 			end
